@@ -4,9 +4,12 @@
 	</nav>
 </div>
 
-{{ if not .Site.IsServer }}
+<!-- 
+TODO: clean up google analytics references or decide to implement google analytics.
+-->
+<!-- {{ if not .Site.IsServer }}
 {{ template "_internal/google_analytics_async.html" . }}
-{{ end }}
+{{ end }} -->
 {{- with .Site.Params.Social -}}
 <script>feather.replace()</script>
 {{- end -}}
